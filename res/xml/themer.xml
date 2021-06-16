@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 NezukoOS
+<!-- Copyright (C) 2021 CipherOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -30,14 +30,14 @@
          android:dependency="use_wall_accent"
          android:persistent="false" />
 
-    <com.nezuko.extras.preferences.SystemSettingSwitchPreference
+    <com.cipher.support.preferences.SystemSettingSwitchPreference
         android:key="use_wall_accent"
         android:disableDependentsState="true"
         android:title="@string/use_wall_accent_string"
         android:summary="@string/use_wall_accent_summary"
         android:defaultValue="false" />
 
-     <com.nezuko.extras.preferences.SystemSettingListPreference
+     <com.cipher.support.preferences.SystemSettingListPreference
        android:key="auto_accent_type"
        android:title="@string/auto_accent_picker_title"
        android:entries="@array/auto_accent_picker_entries"
