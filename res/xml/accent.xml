@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2021 CipherOS
+<!-- Copyright (C) 2020 NezukoOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/themer_title" >
+    android:title="@string/accent_title" >
 
     <ListPreference
        android:layout="@layout/themes_accent_preview"
@@ -29,6 +29,12 @@
          android:defaultValue="0xffff4081"
          android:dependency="use_wall_accent"
          android:persistent="false" />
+
+    <!-- Preview -->
+    <com.cipher.cave.previews.WallAc
+        android:key="wall"
+        android:layout="@layout/wallacpreview"
+        android:selectable="false"/>
 
     <com.cipher.support.preferences.SystemSettingSwitchPreference
         android:key="use_wall_accent"
@@ -42,28 +48,5 @@
        android:title="@string/auto_accent_picker_title"
        android:entries="@array/auto_accent_picker_entries"
        android:entryValues="@array/auto_accent_picker_values" />
-
-     <!-- Power -->
-     <Preference
-          android:key="accent_category"
-          android:title="@string/accent_title" 
-          android:fragment="com.cipher.cave.fragments.Accents"/>
-
-    <ListPreference
-       android:key="android.theme.customization.adaptive_icon_shape"
-       android:title="@string/theme_customization_icon_shape_title"/>
-
-    <ListPreference
-       android:key="android.theme.customization.icon_pack"
-       android:title="@string/theme_customization_sysui_icons_title"/>
-
-    <ListPreference
-       android:layout="@layout/themes_font_preview"
-       android:selectable="false" />
-
-        <com.android.settings.display.FontDialogPreference
-            android:key="custom_font"
-            android:title="@string/font_picker_title"
-            android:persistent="false" />
 
 </PreferenceScreen>
