@@ -43,10 +43,10 @@
        android:entries="@array/auto_accent_picker_entries"
        android:entryValues="@array/auto_accent_picker_values" />
 
-     <!-- Power -->
      <Preference
           android:key="accent_category"
           android:title="@string/accent_title" 
+          android:summary="@string/accent_summary"
           android:fragment="com.cipher.cave.fragments.Accents"/>
 
     <ListPreference
