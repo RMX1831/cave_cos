@@ -1,4 +1,4 @@
-package com.extra.settings.fragments;
+package com.cipher.cave.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -32,7 +32,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.extra_settings_quicksettings);
+        addPreferencesFromResource(R.xml.cipher_cave_quicksettings);
 
         PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
@@ -47,7 +47,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.EXTRA_SETTINGS;
+        return MetricsProto.MetricsEvent.CIPHER;
     }
 
 }

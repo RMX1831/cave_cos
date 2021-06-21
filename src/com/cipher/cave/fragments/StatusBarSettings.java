@@ -1,4 +1,4 @@
-package com.extra.settings.fragments;
+package com.cipher.cave.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -41,7 +41,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.extra_settings_statusbar);
+        addPreferencesFromResource(R.xml.cipher_cave_statusbar);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
@@ -55,7 +55,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.EXTRA_SETTINGS;
+        return MetricsProto.MetricsEvent.CIPHER;
     }
 
 }
